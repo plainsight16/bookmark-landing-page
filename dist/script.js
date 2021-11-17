@@ -75,13 +75,13 @@ closeIcon.addEventListener("click", closeMobileMenu);
 
 dropdownBtn.forEach(item =>{
     item.addEventListener("click",()=>{
-        console.log("hey");
+        
         if(item.nextElementSibling.classList.contains("h-0")){
             item.nextElementSibling.classList.remove("h-0");
-            item.nextElementSibling.classList.add("h-full");
+            item.nextElementSibling.classList.add("animate-heightGrow");
         }
         else{
-            item.nextElementSibling.classList.remove("h-full");
+            item.nextElementSibling.classList.remove("animate-heightGrow");
             item.nextElementSibling.classList.add("h-0");
         }
         
