@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,900&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    @apply uppercase;
+}
+button{
+    @apply px-7 py-3 rounded;
+}
+h1,h2,h3{
+    @apply text-bookmark-blue;
+}
+h2{
+    @apply text-3xl;
+}
+p{
+    @apply text-bookmark-grey;
+}
+
+.rounded-rectangle{
+    @apply hidden md:block bg-bookmark-purple  absolute h-80 w-full;
+}
+
+.Card button{
+    @apply hover:bg-bookmark-white hover:text-bookmark-blue transition-all
+}
+
+
+.collapse{
+    @apply hidden;
+}
+.collapsing{
+    @apply h-0 transition-all;
+}
